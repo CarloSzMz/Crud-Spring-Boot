@@ -5,14 +5,15 @@ import es.prueba.pruebaCrud.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
+// import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.ui.Model;
+// import org.springframework.ui.Model;
 
 import java.util.List;
 import java.util.Optional;
 
-@Controller
+// @Controller
+@RestController
 @RequestMapping("/usuarios")
 public class UsuarioController {
 
@@ -35,12 +36,12 @@ public class UsuarioController {
     }
 
     // Obtener todos los usuarios en formato HTML
-    @GetMapping("/html")
-    public String getUsuariosHtml(Model model) {
-        List<usuario> usuarios = usuarioService.getAllUsuarios();
-        model.addAttribute("usuarios", usuarios); // Agregar los usuarios al modelo
-        return "usuarios"; // Devuelve el nombre del archivo HTML que Thymeleaf procesará
-    }
+    // @GetMapping("/html")
+    // public String getUsuariosHtml(Model model) {
+    //     List<usuario> usuarios = usuarioService.getAllUsuarios();
+    //     model.addAttribute("usuarios", usuarios); // Agregar los usuarios al modelo
+    //     return "usuarios"; // Devuelve el nombre del archivo HTML que Thymeleaf procesará
+    // }
 
     // Obtener un usuario por ID
     @GetMapping("/{id}")
