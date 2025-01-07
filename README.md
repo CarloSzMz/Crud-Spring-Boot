@@ -3,7 +3,7 @@
 Este proyecto es un CRUD desarrollado con **Spring Boot**. 
 
 
-# Base de Datos
+## Base de Datos
 
 Se ha usado MySQL como base de datos 
 
@@ -33,6 +33,6 @@ SQL
     );
 
 
-# API
+## API
 
 Para ver mejor la documentación de la API se ha utilizado [swagger](https://swagger.io/docs/) lo que permite ver los endpoints de manera detallada.
